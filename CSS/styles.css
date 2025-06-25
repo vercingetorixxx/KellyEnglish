@@ -2,6 +2,7 @@
     --color1: white;
     --color2: black;
     --color3: #F4F0F0;
+    --color4: #FFACE3;
 }
 
 * {
@@ -90,15 +91,13 @@ section {
     margin: 0 auto 80px auto;
 }
 
-.section2 {
-    height: 2000px;
-    justify-content: start;
-}
-
 .boxContainer {
     width: 360px;
-    height: 430px
 }
+
+.boxContainer.one { height: 415px; }
+.boxContainer.two { height: 510px; }
+.boxContainer.three { height: 485px; }
 
 .box {
     width: 150px;
@@ -114,7 +113,7 @@ section {
 }
 
 .box *:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .box img {
@@ -128,4 +127,19 @@ section {
 .box.scrolled {
     width: 300px;
     opacity: 1;
+}
+
+.box.ppl img {
+    width: 140cqi;
+}
+
+.box a {
+    color: var(--color4);
+}
+
+.CTA.sln {
+    margin-top: 27px;
+    background: var(--color1);
+    color: var(--color2);
+    border: 2px solid var(--color2);
 }
