@@ -31,6 +31,14 @@ main {
     margin-bottom: 30px;
 }
 
+.alignRight {
+    text-align: right;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -54,6 +62,7 @@ section.intro {
     font-size: 1.5rem;
     font-weight: bold;
     line-height: 2.1rem;
+    width: 100%;
 }
 
 .header3 {
@@ -142,4 +151,18 @@ section {
     background: var(--color1);
     color: var(--color2);
     border: 2px solid var(--color2);
+}
+
+video {
+    width: 100%;
+    margin: 30px 0 20px 0;
+    border-radius: 12px;
+}
+
+.section3 .header3 {
+    line-height: 1.5rem;
+}
+
+.section3 .CTA {
+    margin-top: 30px;
 }
