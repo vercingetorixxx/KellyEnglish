@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const options = {
         root: null, // Use viewport as root
         rootMargin: "0px", // Margin around root
-        threshold: 0.3 // Trigger when 30% of the target is visible
+        threshold: 0.1 // Trigger when 10% of the target is visible
     };
 
     const observer = new IntersectionObserver(callback, options);
