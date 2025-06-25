@@ -1,0 +1,97 @@
+nav {
+    z-index: 9;
+    width: 100%;
+    position: relative;
+}
+
+.banner {
+    background: #00BB77;
+    width: 100%;
+    color: var(--color1);
+    padding: 10px 20px;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.navigation {
+    justify-content: space-between;
+    padding: 15px 15px;
+}
+
+.logo {
+    height: 65px;
+}
+
+#hamToggle {
+    display: none;
+}
+
+.hamIcon {
+    width: 36px;
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+    z-index: 5;
+    display: inline-block;
+}
+
+.hamIcon .hamLine {
+    width: 80%;
+    height: 2px;
+    background-color: var(--color2);
+    position: absolute;
+    left: 3.5px;
+    border: none;
+    z-index: 5;
+    transition: transform 0.32s ease, top 0.32s ease 0.32s, opacity 0.32s ease 0.32s;
+}
+
+.hamIcon .hamLine:nth-child(1) {
+    top: 5px;
+}
+
+.hamIcon .hamLine:nth-child(2) {
+    top: 16px;
+}
+
+.hamIcon .hamLine:nth-child(3) {
+    top: 27px;
+}
+
+.checked .hamLine {
+    transition: transform 0.32s ease 0.32s, top 0.32s ease, opacity 0.32s ease;
+}  /* It has to be '.checked .hamline' and not '.hamIcon .hamLine' */
+
+.checked .hamLine:nth-child(1) {
+    transform: rotate(45deg);
+    top: 16px;
+}
+
+.checked .hamLine:nth-child(2) {
+    opacity: 0;
+}
+
+.checked .hamLine:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 16px;
+}
+
+.hamburger {
+    position: absolute;
+    top: 100%; /* Positions the top at the parent's bottom */
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    background: var(--color1);
+    z-index: 5;
+    transition: all 0.3s ease;
+
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 0;
+}
+
+.hamburger.show {
+    height: 200px;
+    padding-bottom: 20px;
+}
