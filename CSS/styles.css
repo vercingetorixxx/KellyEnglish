@@ -211,6 +211,13 @@ video {
     color: var(--color5);
 }
 
+.section5 .header1 {
+    margin-bottom: 25px
+}
+.section5 .header3 {
+    margin-bottom: -10px;
+}
+
 .section5 .CTA {
     background: var(--color1);
     color: var(--color2);
