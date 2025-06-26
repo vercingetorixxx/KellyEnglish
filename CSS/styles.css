@@ -173,6 +173,17 @@ video {
 
 .section3 .header3 {
     line-height: 1.5rem;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.section3 .header3.bold {
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.section3 .header1 {
+    margin-bottom: 5px;
 }
 
 .section3 .CTA {
@@ -181,7 +192,7 @@ video {
 
 .section4 {
     background-color: var(--color3);
-    padding: 80px 30px;
+    padding: 60px 30px 80px 30px;
 }
 
 .section5 .box {
