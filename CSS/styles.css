@@ -3,6 +3,8 @@
     --color2: black;
     --color3: #F4F0F0;
     --color4: #FFACE3;
+    --color5: #8E55F0;
+    --color6: #FCD3C2;
 }
 
 * {
@@ -45,17 +47,22 @@ main {
 
 section.intro {
     width: 100%;
-    height: 550px;
+    height: 810px;
     background: linear-gradient(to bottom, lightblue 60%, transparent 100%);
     flex-direction: column;
     padding: 50px 0;
     margin-bottom: 30px;
 }
 
+.intro img {
+    width: 250px;
+    margin-bottom: 30px;
+}
+
 .header1 {
     font-size: 2.3rem;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .header2 {
@@ -100,13 +107,18 @@ section {
     margin: 0 auto 80px auto;
 }
 
+.section1 img {
+    width: 250px;
+    margin-top: 20px;
+}
+
 .boxContainer {
     width: 360px;
 }
 
-.boxContainer.one { height: 415px; }
-.boxContainer.two { height: 510px; }
-.boxContainer.three { height: 485px; }
+.section2 .boxContainer.one { height: 415px; }
+.section2 .boxContainer.two { height: 510px; }
+.section2 .boxContainer.three { height: 485px; }
 
 .box {
     width: 150px;
@@ -166,3 +178,84 @@ video {
 .section3 .CTA {
     margin-top: 30px;
 }
+
+.section4 {
+    background-color: var(--color3);
+    padding: 80px 30px;
+}
+
+.section5 .box {
+    padding: 30px 20px;
+}
+
+.section5 div {
+    font-size: 7cqi;
+}
+
+.title {
+    font-size: 11cqi !important;
+}
+
+.purple {
+    color: var(--color5);
+}
+
+.section5 .CTA {
+    background: var(--color1);
+    color: var(--color2);
+    width: 90cqi;
+    font-size: 7cqi;
+}
+
+.section5 .boxContainer.one { height: 600px; }
+.section5 .boxContainer.two { height: 530px; }
+.section5 .boxContainer.three { height: 600px; }
+
+.section6 {
+    margin-top: -50px;
+}
+
+.section6 .CTA {
+    background: var(--color5);
+}
+
+.section6 video {
+    border-radius: 50%;
+    width: 200px;
+    margin-bottom: 35px;
+}
+
+.section7 img {
+    border-radius: 15%;
+    width: 120px;
+    margin: 30px 0;
+}
+
+footer {
+    margin-top: 110px;
+}
+
+.footerBlock {
+    margin-bottom: 40px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footerBlock a {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.footerBlock.SMS {
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 55px;
+}
+
+.footerBlock.SMS img{
+    width: 20px;
+}
+
+#Insta { width: 21px; }
+#YT { width: 27px; }
+#FB { width: 22px; }
