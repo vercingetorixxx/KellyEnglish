@@ -199,7 +199,7 @@ video {
     padding: 30px 20px;
 }
 
-.section5 div {
+.section5 .box div {
     font-size: 7cqi;
 }
 
@@ -224,6 +224,7 @@ video {
 
 .section6 {
     margin-top: -50px;
+    margin-bottom: 150px;
 }
 
 .section6 .CTA {
