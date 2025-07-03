@@ -1,0 +1,172 @@
+.section1 {
+    margin-bottom: 0;
+}
+
+.section1 .header2 {
+    margin: 60px 0;
+}
+
+.section1 .header1 {
+    margin-bottom: 0;
+}
+
+.payCard {
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 20px;
+    flex-direction: column;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+}
+
+.payCard :first-child {
+    margin-top: 0;
+}
+
+.payCard .CTA {
+    height: 50px;
+    border: 3px solid var(--color2);
+    background: white;
+    color: var(--color2);
+}
+
+.payCard.two {
+    background: var(--color5) !important;
+    color: var(--color1);
+    position: relative;
+}
+.payCard.two .CTA {
+    border-color: var(--color5);
+    color: var(--color5);
+}
+
+.bestValue {
+    position: absolute;
+    background: var(--color2);
+    padding: 20px;
+    border-radius: 50%;
+    right: -20px;
+    top: -15px;
+}
+
+.payCard.three {
+    padding: 0 0 20px 0;
+    overflow: hidden;
+}
+
+.payCard.three .purpBg {
+    background: var(--color5);
+    height: 120px;
+    width: 100%;
+    color: var(--color1);
+}
+
+.payCard.three .CTA {
+    background: var(--color2);
+    color: var(--color1);
+}
+
+.payCard.other {
+    border: none;
+    background: var(--color3);
+    padding: 30px 20px 25px 20px;
+    border: 1px solid black;
+}
+
+.graphicPlaceholder {
+    width: 200px;
+    height: 30px;
+    background: var(--color5);
+    margin-bottom: 30px;
+    color: var(--color1);
+}
+
+.smallText {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.payCard.other .header3 {
+    margin-bottom: 0;
+}
+
+.section4 {
+    width: 100%;
+    background: var(--color3);
+    padding: 60px 0px;
+}
+
+.faqItem {
+    text-align: left;
+    width: 90%;
+    margin: 40px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.42s ease;
+}
+.faqItem.first {
+    margin-top: 60px;
+}
+.faqItem.clicked {
+    color: var(--color5);
+}
+
+.faqItem .text {
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 85%;
+    line-height: 1.8rem;
+}
+
+.plusButton {
+    height: 20px;
+    aspect-ratio: 1/1;
+    position: relative;
+    margin-top: 4px;
+}
+.plusLine {
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    width: 90%;
+    height: 4px;
+    background: var(--color2);
+    border-radius: 4px;
+}
+.rotate {
+    transition: all 0.42s ease;
+}
+.rotated {
+    transform: rotate(90deg);
+}
+
+.faqContent {
+    max-height: 338px;
+    transition: max-height 0.5s ease;
+    overflow: hidden;
+    background: var(--color5);
+}
+.faqContent .text {
+    padding: 30px;
+    text-align: left;
+    line-height: 1.5rem;
+    color: var(--color1);
+}
+
+.faqContent.hidden {
+    max-height: 0;
+}
+
+.section4 .payCard {
+    margin-top: 50px;
+    width: 90%;
+    padding: 40px 0 45px 0;
+    border: none;
+    background: var(--color1);
+}
+
+.section4 .CTA {
+    background: var(--color2);
+    color: var(--color1);
+}

@@ -1,0 +1,28 @@
+footer {
+    margin-top: 110px;
+}
+
+.footerBlock {
+    margin-bottom: 40px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footerBlock a {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.footerBlock.SMS {
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 55px;
+}
+
+.footerBlock.SMS img{
+    width: 20px;
+}
+
+#Insta { width: 21px; }
+#YT { width: 27px; }
+#FB { width: 22px; }

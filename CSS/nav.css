@@ -89,6 +89,7 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     padding-bottom: 0;
+    border-bottom: 1px solid lightgray;
 }
 
 .hamburger.show {

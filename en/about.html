@@ -8,18 +8,18 @@
   <link href="../CSS/normalize.css" rel="stylesheet">
   <link href="../CSS/styles.css" rel="stylesheet" />
   <link href="../CSS/nav.css" rel="stylesheet">
-  <!-- <link href="../CSS/footer.css" rel="stylesheet" /> -->
-  <!-- <link href="../CSS/about.css" rel="stylesheet" /> -->
+  <link href="../CSS/footer.css" rel="stylesheet" />
+  <link href="../CSS/about.css" rel="stylesheet" />
   <!-- <link href="../CSS/tablet.css" rel="stylesheet" /> -->
   <link rel="icon" type="image/x-icon" href="../media/images/favicon.ico" />
 </head>
 
 <body>
 
-    <nav>
+    <nav id="nav">
         <div class="banner flexCenter">Special Event! 💐 Get 2 free lessons on your first purchase!</div>
         <div class="navigation flexCenter">
-            <img class="logo" src="../media/images/ksLogo_white.webp">
+            <a href="about.html"><img class="logo" src="../media/images/ksLogo_white.webp"></a>
             <input id="hamToggle" type="checkbox" autocomplete="off">
             <label class="hamIcon" for="hamToggle">
                 <div class="hamLine"></div>
@@ -28,14 +28,16 @@
             </label>
         </div>
         <div class="hamburger flexCenter">
-            <a>Start Here</a>
-            <a>Pricing</a>
+            <a href="courses.html">Lessons</a>
+            <a href="pricing.html">Pricing</a>
             <a>Level Test</a>
             <a>Sign In</a>
         </div>
     </nav>
 
     <main>
+
+        <a href="#nav" class="top flexCenter hidden">^</a>
 
         <section class="intro flexCenter">
             <div class="header1">New here?</div>

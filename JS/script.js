@@ -46,3 +46,37 @@ document.addEventListener("DOMContentLoaded", () => {
         stateMap.set(target, { timeoutId: null, isAnimating: false }); // Initialize state
     });
 });
+
+
+
+// plusButtons
+
+const triggers = document.querySelectorAll('.faqItem');
+
+triggers.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+        const plusButton = trigger.querySelector('.plusButton');
+        plusButton.querySelector('.rotate').classList.toggle('rotated');
+        trigger.nextElementSibling.classList.toggle('hidden');
+        trigger.classList.toggle('clicked');
+    })
+});
+
+
+
+// top button
+
+const topbtn = document.querySelector('.top');
+const threshold = window.innerHeight;
+
+function handleScrollDown() {
+    if (window.scrollY > threshold) {
+        topbtn.style.display = 'flex';
+        setTimeout(() => topbtn.classList.remove('hidden'), 100);
+    } else {
+        topbtn.classList.add('hidden');
+        setTimeout(() => topbtn.style.display = 'none', 500);
+    }
+}
+
+window.addEventListener('scroll', handleScrollDown);
