@@ -70,7 +70,7 @@ triggers.forEach((trigger) => {
 
 // ---------- top button ---------- //
 
-const topbtn = document.querySelector(".top");
+const topBtn = document.querySelector(".top");
 const threshold = window.innerHeight;
 let hideTimeout = null;
 let showTimeout = null;
@@ -81,11 +81,11 @@ function handleScrollDown() {
       clearTimeout(hideTimeout);
       hideTimeout = null;
     }
-    if (topbtn.style.display !== "flex" && !showTimeout) {
+    if (topBtn.style.display !== "flex" && !showTimeout) {
       showTimeout = setTimeout(() => {
-        topbtn.style.display = "flex";
+        topBtn.style.display = "flex";
         setTimeout(() => {
-          topbtn.classList.remove("hidden");
+          topBtn.classList.remove("hidden");
           showTimeout = null;
         }, 100);
       }, 200);
@@ -95,11 +95,11 @@ function handleScrollDown() {
       clearTimeout(showTimeout);
       showTimeout = null;
     }
-    if (topbtn.style.display === "flex" && !hideTimeout) {
+    if (topBtn.style.display === "flex" && !hideTimeout) {
       hideTimeout = setTimeout(() => {
-        topbtn.classList.add("hidden");
+        topBtn.classList.add("hidden");
         setTimeout(() => {
-          topbtn.style.display = "none";
+          topBtn.style.display = "none";
           hideTimeout = null;
         }, 500);
       }, 200);
@@ -125,4 +125,17 @@ function scrollToLevel1(btn, event) {
 
 scrollers.forEach((scroller) => {
   scroller.addEventListener("click", (event) => scrollToLevel1(scroller, event));
+});
+
+
+
+// ---------- dropdown menu ---------- //
+
+const dropBtn = document.querySelector(".dropdownButton");
+const chevron = document.querySelector(".chevron");
+const dropCnt = document.getElementById("dropdownContent");
+
+dropBtn.addEventListener('click', () => {
+    chevron.classList.toggle('rotated');
+    dropCnt.classList.toggle('hidden');
 });
