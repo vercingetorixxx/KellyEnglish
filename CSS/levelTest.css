@@ -1,0 +1,15 @@
+.intro {
+    height: fit-content;
+    padding: 40px 25px;
+    background: lightblue;
+    text-align: left;
+}
+
+.intro * {
+    text-align: left;
+    width: 100%;
+}
+
+.intro .header3 {
+    margin-bottom: 0;
+}

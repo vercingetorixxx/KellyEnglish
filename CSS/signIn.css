@@ -1,0 +1,63 @@
+.section1 {
+    margin-top: 50px;
+}
+
+form {
+    width: 90%;
+}
+
+form label, form input {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+form input {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    height: 40px;
+}
+
+.remember {
+    display: inline;
+    height: fit-content;
+}
+div.remember {
+    width: 100%;
+    display: flex;
+}
+input.remember {
+    width: 15px;
+}
+label.remember {
+    width: fit-content;
+    margin-left: 6px;
+    line-height: 1.05rem;
+}
+
+input[type="submit"] {
+    text-align: center;
+    color: var(--color1);
+    background: var(--color2);
+    height: 55px;
+    margin: 0 auto;
+}
+
+#forgot {
+    margin-top: 30px;
+}
+
+hr {
+    width: 100%;
+    color: lightgray;
+    margin: 50px 0;
+}
+
+.section1 .CTA {
+    background: var(--color5);
+    color: var(--color1);
+    margin-top: 15px;
+    height: 55px;
+}

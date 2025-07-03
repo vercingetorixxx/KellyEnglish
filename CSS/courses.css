@@ -1,0 +1,98 @@
+.intro {
+    width: 100%;
+    background: var(--color5);
+    flex-direction: column;
+    padding: 50px 0 0 0;
+    margin-bottom: 30px;
+    color: var(--color1);
+}
+
+.intro * {
+    text-align: left;
+    width: 80%;
+}
+
+.intro .header1 {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.intro img {
+    width: 250px;
+    margin-top: 10px;
+}
+
+.section1 .header3 {
+    color: var(--color5);
+    font-weight: bold;
+    margin: 20px 0 0 0;
+    width: 90%;
+    background: var(--color3);
+    border-radius: 15px;
+    height: 50px;
+}
+
+.section1 .header3.last {
+    margin-bottom: 20px;
+}
+
+.section1 a.text {
+    margin-top: 15px;
+    color: var(--color5);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+
+.section2 .text, .section2 .header2 {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.courseCard {
+    padding: 0 0 20px 0;
+    flex-direction: column !important;
+    margin: 40px 0 30px 0;
+    width: 100%;
+    position: relative;
+}
+
+.courseCard .purpBg {
+    background: var(--color5);
+    height: 120px;
+    width: 100%;
+    color: var(--color1);
+    border-radius: 15px 15px 0 0;
+}
+
+.courseCard .header3 {
+    width: 80%;
+}
+
+.courseCard .text {
+    text-align: center;
+    width: 85%;
+    line-height: 1.6rem;
+    margin: -20px 0 20px 0;
+}
+
+.courseCard .CTA {
+    background: var(--color2);
+    color: var(--color1);
+    width: 80%;
+    height: 40px;
+}
+
+.courseCard .number {
+    position: absolute;
+    background: var(--color2);
+    color: var(--color1);
+    width: 45px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    top: -20px;
+    left: 25px;
+    font-size: 1.5rem;
+    padding-top: 2px;
+}
